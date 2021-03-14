@@ -8,7 +8,7 @@
 
     <style>
         html {
-            height: 1000px;
+            height: auto;
         }
     body {
         margin:0;
@@ -16,64 +16,57 @@
         font-family: sans-serif;
         background: linear-gradient(#141e30, #243b55);
     }
-    label{
+    label,h5,h6{
         color: white;
     }
-    .login-box {
-     position: absolute;
-     top: 70%;
-     left: 50%;
-     width: 50%;
-     padding: 40px;
-     transform: translate(-50%, -50%);
-     background: rgba(0,0,0,.5);
-     box-sizing: border-box;
-     box-shadow: 0 15px 25px rgba(0,0,0,.6);
-     border-radius: 10px;
+    
+     
+    
 }
-
+   
     </style>
     <title>Car Price Prediction</title>
   </head>
   <body>
     
-    
+    <h1  style="color: blanchedalmond; text-align: center;">CAR PRICE PREDICTION</h1>
+    <h5  style="color: blanchedalmond; text-align: center;">Machine Learning Model</h5>
     <div class="container-sm" style="width: 50%;">
         <form action="{{ url_for('predict')}}" method="post" class="login-box">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-1 text-white-900", style="color: blanchedalmond; text-align: center;">CAR PRICE PREDICTION</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color: blanchedalmond; text-align: center;">Machine Learning Model</p>
+            
             <br/>
-            <label>Year of purchase</label>
+            <h6>Year of purchase</h6>
             <input type="number" class="form-control" name="Year" required="required">  
             <br/>
-            <label>What is the Showroom Price?(In lakhs)</label>
+            <h6>What is the Showroom Price?(In lakhs)</h6>
             <input type="text" class="form-control" name="Present_Price" required="required">  
             <br/>
-            <label>How Many Kilometers Drived?</label>
+            <h6>How Many Kilometers Drived?</h6>
             <input type="text" class="form-control" name="Kms_Driven" required="required">  
             <br/>
-            <label>How much owners previously the car had?</label>
+            <h6>How much owners previously the car had?</h6>
             <input type="text" class="form-control" name="Owner" placeholder="0 or 1 or 3" required="required">  
             <br/>
-            <label>What is the Fuel type?</label>
+            <h6>What is the Fuel type?</h6>
             <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" name="Fuel_Type_Petrol">
                 <option value="Petrol">Petrol</option>
                 <option value="Diesel">Diesel</option>
                 <option value="Diesel">CNG</option>
             </select>
-            <label>Are you A Dealer or Individual?</label>
+            <h6>Are you A Dealer or Individual?</h6>
             <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" name="Seller_Type_Individual">
                 <option value="Dealer">Dealer</option>
                 <option value="Individual">Individual</option>
             </select>
-            <label>Transmission type</label>
+            <h6>Transmission type</h6>
             <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" name="Transmission_Mannual">
                 <option value="Mannual">Manual Car</option>
                 <option value="Automatic">Automatic Car</option>
             </select>
-          <div style="text-align: center;">
-            <button  class="flex mx-auto text-white-900 bg-blue border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Calculate Selling Price</button>
-          </div>
+            <div style="text-align: center;" class="d-grid gap-2 d-md-block">
+              <button class="btn btn-primary" type="submit">Calculate Selling Price</button>
+            </div>
+          
             <div class="p-2 w-full text-center">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white-900", style="color: blanchedalmond;">{{ prediction_text }}</h1>
             </div>    
