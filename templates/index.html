@@ -68,14 +68,14 @@
             <h6>Year of purchase</h6>
             <input type="number" class="form-control" id="Year" name="Year" required="required">  
             <br/>
-            <h6>What is the Showroom Price?(In lakhs)</h6>
-            <input type="text" class="form-control" id="Present_Price" name="Present_Price" required="required">  
+            <h6>What is the Showroom Price?<b>(In Lakhs)</b></h6>
+            <input type="number" class="form-control" id="Present_Price" placeholder="For example, Put 5 for 5L" name="Present_Price" required="required">  
             <br/>
             <h6>How Many Kilometers Drived?</h6>
-            <input type="text" class="form-control" id="Kms_Driven" name="Kms_Driven" required="required">  
+            <input type="number" class="form-control" id="Kms_Driven" name="Kms_Driven" required="required">  
             <br/>
             <h6>How much owners previously the car had?</h6>
-            <input type="text" class="form-control" id="Owner" name="Owner" placeholder="0 or 1 or 3" required="required">  
+            <input type="number" class="form-control" id="Owner" name="Owner" placeholder="0 or 1 or 3" required="required">  
             <br/>
             <h6>What is the Fuel type?</h6>
             <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example" name="Fuel_Type_Petrol">
@@ -98,7 +98,7 @@
             </div>
           
             <div class="p-2 w-full text-center">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white-900", style="color: blanchedalmond;">{{ prediction_text }}</h1>
+                <h1 class="sm:text-3xl text-2xl font-large title-font mb-4 text-white-900", style="color: blanchedalmond;">{{ prediction_text }}</h1>
             </div>    
             </form>
     </div>
