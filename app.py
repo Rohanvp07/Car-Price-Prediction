@@ -48,7 +48,7 @@ def predict():
         prediction=model.predict([[Present_Price,Kms_Driven,Owner,Year,Fuel_Type_CNG,Fuel_Type_Diesel,Fuel_Type_Petrol,Seller_Type_Dealer,Seller_Type_Individual,Transmission_Automatic,Transmission_Mannual]])
         output=round(prediction[0],2)
         if output<0:
-            return render_template('index.html',prediction_texts="Sorry you cannot sell this car")
+            return render_template('index.html',prediction_text="Sorry you cannot sell this car")
         else:
             return render_template('index.html',prediction_text="You Can Sell Your Car at {} Lakhs".format(output))
     else:
