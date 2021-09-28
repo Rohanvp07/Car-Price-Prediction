@@ -8,7 +8,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 standard_to = StandardScaler()
 
 
-@app.route('/',methods=['GET'])
+@app.route('/')
 def Home():
     return render_template('index.html')
 
