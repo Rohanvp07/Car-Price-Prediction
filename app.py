@@ -10,7 +10,7 @@ standard_to = StandardScaler()
 
 @app.route('/',methods=['GET'])
 def Home():
-    return render_template('index.html')
+    return 'hello world!!!'
 
 
 @app.route("/predict", methods=['POST'])
