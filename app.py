@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request
-import requests
+from flask import Flask, redirect, url_for, request, render_template
 import pickle
 import sklearn
 from sklearn.preprocessing import StandardScaler
@@ -10,7 +9,7 @@ standard_to = StandardScaler()
 
 @app.route('/',methods=['GET'])
 def Home():
-    return 'hello world!!!'
+    return render_template('index.html')
 
 
 @app.route("/predict", methods=['POST'])
